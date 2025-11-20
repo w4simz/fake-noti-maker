@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Report Screen</title>
+<meta http-equiv="refresh" content="30">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="back-arrow"></div>
+    <div class="header-title">Report</div>
+  </div>
+
+  <!-- Centered Content -->
+  <div class="center-wrapper">
+    <div class="content">
+      <h1>This account was removed.<br>Here's what else you can do.</h1>
+      <p>Thanks for reporting <strong id="username-display">username_here</strong>'s account. We've removed it from Instagram because it goes against our Community Standards on suicide or self-injury.</p>
+      <a href="#" class="link">See report details</a>
+
+      <div class="section">
+        <h2>Other tools that can help</h2>
+
+        <div class="tool">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2l7 4v6c0 5.25-3.5 9.75-7 10-3.5-.25-7-4.75-7-10V6l7-4z"/>
+            </svg>
+          </div>
+          <div class="tool-text">
+            <h3>Learn more about our Community Standards</h3>
+          </div>
+        </div>
+
+        <div class="tool">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 21C12 21 4 13.36 4 8.5C4 5.42 6.42 3 9.5 3C11.24 3 12.91 3.81 14 5.08C15.09 3.81 16.76 3 18.5 3C21.58 3 24 5.42 24 8.5C24 13.36 16 21 16 21H12Z"/>
+            </svg>
+          </div>
+          <div class="tool-text">
+            <h3>Get support</h3>
+            <p>There are tools and resources that can help you in difficult moments.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-space"></div>
+
+  <!-- Username input above screenshot button -->
+  <div class="username-input">
+    <input type="text" id="newUsername" placeholder="Enter username">
+    <button onclick="changeUsername()">Update</button>
+  </div>
+
+  <!-- Screenshot Button -->
+  <button class="screenshot-btn" onclick="takeScreenshot()">Take Screenshot</button>
+
+  <!-- Include html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
